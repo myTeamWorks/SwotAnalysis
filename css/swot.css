@@ -1,0 +1,97 @@
+﻿.swot-container {
+    width: 690px;
+    height: 480px;
+    margin-bottom: 30px;
+}
+
+    .swot-container .line {
+        display: table;
+        width: 690px;
+        height: 200px;
+    }
+
+        .swot-container .line > div {
+            width: 340px;
+            height: 200px;
+            overflow: auto;
+            display: table-cell;
+        }
+
+.strengths {
+    background-color: #CCFFCC;
+}
+
+.weaknesses {
+    background-color: #FFFFCC;
+    display: table-cell;
+}
+
+.opportunities {
+    background-color: #00CCFF;
+    display: table-row;
+}
+
+.threats {
+    background-color: #FFCCCC;
+    display: table-row;
+}
+
+.swot-container h1 {
+    font-size: 12pt;
+    text-align: center;
+}
+
+.swot-entry {
+    width: 100%;
+    display: block;
+    font-family: arial;
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+    max-width: 340px;
+}
+
+.swot-text {
+    width: 80%;
+    margin-left: 5px;
+}
+
+
+.remove-swot {
+    width: 16px;
+    height: 16px;
+    background: url(icon-delete.png);
+    float: right;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+.save-swot {
+    width: 690px;
+    height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16pt;
+    float: left;
+    display: table-row;
+    background: #ccc;
+    cursor: pointer;
+    vertical-align: middle;
+    padding-top: 15px;
+    display: none;
+}
+
+.swot-list {
+    max-height: 150px;
+    overflow: auto;
+}
+
+.save-swot:hover {
+    overflow-x: auto;
+    background-color: #eee;
+}
+
+.swot-info {
+    text-align: right;
+    background: #cccccc;
+}

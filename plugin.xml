@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<PluginConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PluginName>Swot</PluginName>
+  <Description>Let the world help you</Description>
+  <CallbackMethod>CreateSwot</CallbackMethod>
+  <Version>1</Version>
+  <ExternalScripts>   
+  </ExternalScripts>
+</PluginConfiguration>
