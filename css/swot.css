@@ -1,97 +1,130 @@
 ﻿.swot-container {
-    width: 690px;
-    height: 480px;
-    margin-bottom: 30px;
+	/*margin-bottom:30px;*/
+	margin: 10px;
 }
 
-    .swot-container .line {
-        display: table;
-        width: 690px;
-        height: 200px;
-    }
+.swot-container .line {
+	display: table;
+	width: 100%;
+	min-height: 150px;
+}
 
-        .swot-container .line > div {
-            width: 340px;
-            height: 200px;
-            overflow: auto;
-            display: table-cell;
-        }
+.swot-container .line > div {
+	overflow: auto;
+	display: table-cell;
+	width: 50%;
+}
 
 .strengths {
-    background-color: #CCFFCC;
+    border: 2px solid #a4dba3;
+	border-top-left-radius: 30px;
+}
+.strengths h1 {
+	background: #a4dba3;
 }
 
 .weaknesses {
-    background-color: #FFFFCC;
-    display: table-cell;
+    border: 2px solid #e3dc7f;
+	border-top-right-radius: 30px;
+}
+.weaknesses h1 {
+	background: #e3dc7f;
 }
 
 .opportunities {
-    background-color: #00CCFF;
-    display: table-row;
+    border: 2px solid #82b8d0;
+	border-bottom-left-radius: 30px;
+}
+.opportunities h1 {
+	background: #82b8d0;
 }
 
 .threats {
-    background-color: #FFCCCC;
-    display: table-row;
+    border: 2px solid #ee8e85;
+	border-bottom-right-radius: 30px;
 }
+.threats h1 {
+	background: #ee8e85;
+}
+
 
 .swot-container h1 {
     font-size: 12pt;
     text-align: center;
+	color: white;
+	padding: 5px;
+	margin: 0px;
 }
 
 .swot-entry {
     width: 100%;
     display: block;
     font-family: arial;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #e7e7e7;
     margin-bottom: 5px;
-    max-width: 340px;
+	padding-bottom: 5px;
 }
 
-.swot-text {
-    width: 80%;
-    margin-left: 5px;
+.swot-text
+{
+	width:80%;
+	margin-left:5px;
+	padding-left: 5px;
+}
+
+.swot-entry-text {
+	margin-right: 10px;
+}
+.swot-entry-creator {
+	font-size: 11px;
+	margin-top: 3px;
 }
 
 
 .remove-swot {
-    width: 16px;
-    height: 16px;
-    background: url(icon-delete.png);
-    float: right;
+	background: url('remove.png') no-repeat transparent;
+	width: 15px;
+	height: 19px;
+	float: right;
     cursor: pointer;
-    margin-right: 5px;
+	opacity: .4;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	display: none;
+}
+.remove-swot:hover {
+	opacity: 1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 
 .save-swot {
-    width: 690px;
+    width: 100%;
     height: 40px;
     text-align: center;
-    text-transform: capitalize;
     font-size: 16pt;
     float: left;
     display: table-row;
-    background: #ccc;
+    background: #eee;
     cursor: pointer;
     vertical-align: middle;
     padding-top: 15px;
     display: none;
 }
-
-.swot-list {
-    max-height: 150px;
-    overflow: auto;
+.swot-list
+{
+	max-height:150px;
+	overflow:auto;
+	padding: 10px;
 }
-
-.save-swot:hover {
-    overflow-x: auto;
-    background-color: #eee;
+.save-swot:hover
+{
+	overflow-x: auto;
+	background-color:#ccc;
 }
 
 .swot-info {
     text-align: right;
-    background: #cccccc;
+    margin-right: 25px;
+	margin-right: 0px\9;
+	font-size: 11px;
 }
